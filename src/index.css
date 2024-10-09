@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin-reverse {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.animate-spin-reverse-slow {
+    animation: spin-reverse 15s linear infinite;
+}
+
+@keyframes spin-clockwise {
+    from {
+        transform: rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg); 
+    }
+}
+
+.animate-spin-clockwise {
+    animation: spin-clockwise 15s linear infinite; 
+}
+
+@keyframes spin-anticlockwise {
+    from {
+        transform: rotate(0deg); 
+    }
+    to {
+        transform: rotate(-360deg); 
+    }
+}
+
+.animate-spin-anticlockwise {
+    animation: spin-anticlockwise 15s linear infinite; 
+}
+
+
+@keyframes moving-line {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(800vh); 
+    }
+  }
+  
+  .animate-moving-line {
+    animation: moving-line 17s linear infinite; 
+  }
+
+  @keyframes moving-line2 {
+    0% {
+      transform: translateY(100vh);
+    }
+    100% {
+      transform: translateY(300vh); 
+    }
+  }
+  
+  .animate-moving-line2 {
+    animation: moving-line 20s linear infinite; 
+  }
+
+  @keyframes moving-line3 {
+    0% {
+      transform: translateY(300vh);
+    }
+    100% {
+      transform: translateY(600vh); 
+    }
+  }
+  
+  .animate-moving-line2 {
+    animation: moving-line 22s linear infinite; 
+  }
+  
+
+
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    20% {
+      transform: translateX(0%);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    45% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    70% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    95% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .animate-slide {
+    animation: slide 20s infinite;
+  }
+  
+  
+  
+
+
